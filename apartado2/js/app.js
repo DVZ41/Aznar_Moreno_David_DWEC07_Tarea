@@ -5,7 +5,7 @@ const listaBicis = document.getElementById("listaBicis");
 selectCat.addEventListener("change", function(){
     let cat = selectCat.value;
     // si es "Todas" no le pasamos cat
-    let url = "http://api.raulserranoweb.es/rest.php";
+    let url = "https://api.raulserranoweb.es/rest.php";
     if(cat !== "Todas"){
         url += "?cat=" + cat;
     }
@@ -27,7 +27,7 @@ function pintarBicis(lista){
     listaBicis.innerHTML = ""; // limpiamos
     lista.forEach(bici => {
         // la imagen segun la url
-        let imgUrl = "http://api.raulserranoweb.es/imagenes_art/" + bici.cod;
+        let imgUrl = "https://api.raulserranoweb.es/imagenes_art/" + bici.cod;
         let div = document.createElement("div");
         div.classList.add("bici");
         div.innerHTML = `
@@ -42,4 +42,5 @@ function pintarBicis(lista){
 
 }
 //cuandop se carga la pagina al inicio se muestrabn todas la bicis
-cargarBicis("http://api.raulserranoweb.es/rest.php");
+cargarBicis("https://api.raulserranoweb.es/rest.php");
+
