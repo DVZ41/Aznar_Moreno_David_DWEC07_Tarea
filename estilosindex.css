@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #000000;
+}
+
+
+
+.boton-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+.boton {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: #04274d;
+}
+.boton-volver {
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0 auto;
+    padding: 8px 12px;
+    background-color: #2ebd03;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+.boton-volver:hover {
+    background-color: #044d04;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #555;
+}
